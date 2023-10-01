@@ -44,6 +44,7 @@ function App() {
     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} key={new Date()} />
     <Alert alert={alert}/>
     <div className="container my-3">
+      {/* <TextForm showAlert={showAlert} heading="Try TextUtils" mode={mode}/> */}
       <Routes>
           <Route exact path="/"element={<TextForm showAlert={showAlert} heading="Try TextUtils" mode={mode}/>} />
           <Route exact path="/about"element={<About mode={mode} />} />
